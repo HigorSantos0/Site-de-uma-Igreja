@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    background: rgb(255, 255, 255);
+}
+ul,ul.nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(120deg, #bebebe, #0000ff);
+    padding: 35px 100px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+header h2 span {
+    color: blue;
+    
+}
+header ul.nav {
+    display: flex;
+}
+header ul.nav li {
+    margin: 0 15px;
+}
+header ul.nav li:first-child {
+    margin-left: 0;
+}
+header ul.nav li:last-child {
+    margin-right: 0;
+}
+@media(max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header ul.nav li{
+        margin: 0 7px;
+    }
+}
+.foco {
+    width: 100%;
+    height: 500px;
+    background: url("./img/peque3.jpg") no-repeat center;
+    background-size: cover;
+}
+.foco h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 430px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+.conteudo {
+    width: 30%;
+    background: linear-gradient(120deg, #222222, #0000ff);
+    border-radius: 20px;
+    margin: 5px;
+    float: left;
+    margin-top: 8%;
+    text-align: center;
+}
+.cont {
+    width: 120px;
+    height: 120px;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+.detalhes {
+    margin-top: -50px;
+}
+.conteudo h1 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 5;
+    text-transform: uppercase;
+}
+.cont h4 {
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+    color: #fff;
+
+}
+.detalhes h4 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    line-height: 1;
+}
+.conteudo a {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: #fff;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.conteudo a:hover {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.row {
+    padding: 0 20px;
+    display: table;
+}
+.container {
+    float: left;
+    width: 75%;
+}
+aside {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    
+    
+}
+.conteudo {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    background: linear-gradient(120deg, #201f1f, #0000ff);
+}
+.card p{
+    margin-top: 10px;
+    background: linear-gradient(120deg, #313131, #d9d9eb);
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(110, 110, 110);
+    padding: 10px 10px;
+    margin-top: 20px;
+}

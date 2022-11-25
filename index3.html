@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style3.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contato</h1>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Seu Email">
+            <small class="error"></small>
+
+            <label for="message">Nome:</label>
+            <textarea id="message" placeholder="Digite aqui a sua mensagem" rows="6"> </textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Enviar">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js"></script> 
+    
+</body>
+</html>
